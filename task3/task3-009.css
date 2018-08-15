@@ -1,0 +1,55 @@
+:root {                            
+     font-size: 1em;        /* 1 针对所有屏幕，但是在更大的屏幕会被覆盖*        */
+  }                                  
+  
+  @media (min-width: 800px) {      /*  2 针对比800px更宽的屏幕，覆盖默认样式代码*/
+    :root {                          
+      font-size: 1.2em;            
+    }                                
+  }                                  
+  
+  @media (min-width: 1200px) {       /*3 针对比1200px更宽的屏幕，覆盖以上两套样式代码*/
+    :root {                          
+      font-size: 1.5em;                
+    }                                
+  }   
+body{
+    background-color: rgb(104,205,213);
+    color:white;
+}
+.introduce-return{
+    margin-right: 80%;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    padding:0.2em;
+}
+.introduce-top{
+    margin-right: 3em;
+    margin-top: 2em;
+    margin-left: 3em;
+    padding:0.2em;
+    text-align: center;
+}
+.introduce-description{
+    margin-right: 2em;
+    margin-top: 4em;
+    margin-left: 2em;
+    padding:0.2em;
+    font-size: 1rem;
+}
+.introduce-right{
+    margin-right: 1em;
+    margin-top: 5em;
+    padding:0.2em;
+    float: right;
+    margin-bottom: 10em;
+    text-align: center;
+}
+.introduce-left{
+    margin-top: 5em;
+    margin-left: 1em;
+    padding:0.2em;
+    float:left;
+    margin-bottom: 10em;
+    text-align: center;
+}

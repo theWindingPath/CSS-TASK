@@ -1,0 +1,14 @@
+
+.jiugongge{
+    width: 29%;
+    height:  29%;
+    padding: 1%;
+    margin: 1%;
+    background-color: orange;
+    float: left;
+    border-radius: 10%;
+}
+.text_line{
+	clear: both;
+	margin-bottom: 2em;
+}
