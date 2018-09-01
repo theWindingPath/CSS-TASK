@@ -86,14 +86,107 @@ body{
     margin-right: 0.2rem;
 }
 /*投票部分*/
+.task7-box .vote-numbers {
+    width: 6.4rem;
+}
 .task7-box .vote-numbers p {
     font-size: 0.22rem;
     color: #ffffff;
 }
-
-
-
-.footer{
-    background: orangered;
+.task7-box .vote-numbers .vote-numbers-out{
+    /* border: 2px solid saddlebrown; */
+    margin: 0.02rem auto;
+    height: 2.1rem; /*给外面一个高度，装下hover内容，在hover隐藏后依然撑开内容*/
 }
+
+.task7-box .vote-numbers .vote-numbers-left {
+    background-color: #f5c97b;
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 4px solid #ffffff;
+    margin: auto 0.1rem;
+}
+
+.task7-box .vote-numbers .vote-numbers-out:hover .task7-hover {
+    display: block;
+}
+
+.task7-box .vote-numbers .task7-hover {
+    /* background: orange; */
+    width: 1.4rem;
+    margin: auto 0.1rem;
+    display: none;
+    /* display：none 在鼠标没有移到图片时隐藏起来 */
+}
+/*给一个active,第一个不隐藏*/
+.task7-box .vote-numbers .active{
+    display: block;
+}
+
+.task7-box .vote-numbers .task7-hover ul li{
+    display: inline-block;
+    margin-top: 0.2rem;
+    margin-left: 0.02rem;
+}
+
+.task7-box .vote-numbers .task7-hover .hover-one {
+    background: url("../img/task7-hover-01.png") no-repeat;
+    background-size: 100% auto;
+    height: 0.3rem;
+    width: 0.3rem;
+}
+.task7-box .vote-numbers .task7-hover .hover-two {
+    background: url("../img/task7-hover-02.png") no-repeat;
+    background-size: 100% auto;
+    height: 0.3rem;
+    width: 0.3rem;
+}
+.task7-box .vote-numbers .task7-hover .hover-three {
+    background: url("../img/task7-hover-03.png") no-repeat;
+    background-size: 100% auto;
+    height: 0.3rem;
+    width: 0.3rem;
+}
+.task7-box .vote-numbers .task7-hover .hover-four {
+    background: url("../img/task7-hover-04.png") no-repeat;
+    background-size: 100% auto;
+    height: 0.3rem;
+    width: 0.3rem;
+}
+
+.task7-box .vote-numbers .vote-numbers-left .name {
+    color: #565656;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.task7-box .vote-numbers .vote-numbers-left .one{
+    background-color: #83b09a;
+    height: 0.3rem;
+    text-align: center;
+}
+/*footer部分*/
+.task7-box .task7-footer {
+    /* border: 2px solid darkred; */
+    height: 1.9rem;
+    width: 6.4rem;
+    position: fixed;
+    bottom: 0;
+    background-color: #29bde0;
+    text-align: center;
+    line-height: 1.9rem;
+}
+.task7-box .task7-footer .btn{
+    background: #fbb435;
+    width: 5rem;
+    height: 0.9rem;
+}
+.task7-box .task7-footer .btn span {
+    color: #ffffff;
+    font-size: 0.32rem;
+}
+
+/* .footer{
+    background: orangered;
+} */
 
