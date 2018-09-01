@@ -69,7 +69,7 @@ body{
     position: fixed;
     bottom: 0;
     height: 1rem;
-    background: #f8fafb; 
+    background: rgba(248, 250, 251, 0.3);/*实现半透明 透明度0.3*/
  /*   background-color: sandybrown; */
     display: flex;
     width: 100%;

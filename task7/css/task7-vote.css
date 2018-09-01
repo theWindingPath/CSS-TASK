@@ -1,0 +1,99 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.task7-box{
+    background: #29bde0;
+    width: 6.4rem;
+    /* height: 1rem; */
+    position: relative;
+    left: 50%;
+    margin-left: -3.2rem;
+    /* overflow: hidden; */
+}
+.task7-box .vote-header {
+    background: #29bde0;
+    position: fixed;
+    width: 6.4rem;
+    height: 1rem;
+    top: 0;
+    z-index: 99;
+}
+.task7-box .vote-header+*{margin-top: 1rem;}
+
+.task7-box .vote-header .header-left .btn{
+    background-color: #29bde0;
+    color: #ffffff;
+    font-size: 0.32rem;
+    margin-top: 0.2rem;
+    /* border: 0; */
+}
+.task7-box .vote-header .header-center {
+    text-align: center;
+    font-size: 0.32rem;
+    line-height: 1rem;
+    color: #ffffff;
+}
+.task7-box .vote-header .header-right .btn {
+    background-color: #29bde0;
+    color: #ffffff;
+    font-size: 0.32rem;
+    margin-top: 0.2rem;
+    /* border: 0; */
+}
+/*发言部分*/
+.task7-box .task7-speak {
+    background-color: #b9e0f5;
+    height: 0.8rem;
+}
+.task7-box .task7-speak p{
+    color: #464646;
+    line-height: 0.8rem;
+    margin-left: 0.5rem;
+    font-size: 0.26rem;
+}
+.task7-box .task7-speak #myVideo{
+    display: none;
+}
+.task7-box .task7-speak .play{
+    height: 0.52rem;
+    width: 0.52rem;
+    background: url("../img/task7-play.png") no-repeat;
+    background-size: 100% auto;
+    cursor: pointer;
+    float: right;
+    margin-top: -0.76rem;
+    margin-right: 0.2rem;
+}
+.task7-box .task7-speak .pause{
+    height: 0.52rem;
+    width: 0.52rem;
+    background: url("../img/task7-pause.png") no-repeat;
+    background-size: 100% auto;
+    cursor: pointer;
+    float: right;
+    margin-top: -0.76rem;
+    margin-right: 0.2rem;
+}
+/*投票部分*/
+.task7-box .vote-numbers p {
+    font-size: 0.22rem;
+    color: #ffffff;
+}
+
+
+
+.footer{
+    background: orangered;
+}
+
