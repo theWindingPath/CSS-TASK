@@ -113,7 +113,7 @@ body{
 
 .task7-box .vote-numbers .task7-hover {
     /* background: orange; */
-    width: 1.4rem;
+    width: 1.6rem;
     margin: auto 0.1rem;
     display: none;
     /* display：none 在鼠标没有移到图片时隐藏起来 */
@@ -126,7 +126,7 @@ body{
 .task7-box .vote-numbers .task7-hover ul li{
     display: inline-block;
     margin-top: 0.2rem;
-    margin-left: 0.02rem;
+    /* margin-left: 0.02rem; */
 }
 
 .task7-box .vote-numbers .task7-hover .hover-one {
