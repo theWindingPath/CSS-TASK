@@ -37,7 +37,7 @@
 
 .task5-header .back-logo a {
     display: block;
-    background: url("img/back-logo003.png");
+    background: url("img/back-logo003.png") no-repeat;
     width: 1.1rem;
     height: 1.9rem;
 }
@@ -181,7 +181,7 @@
     display: inline-block;
     width: 1.2rem;
     height: 1.2rem;
-    background: url("img/task5-star003.png");
+    background: url("img/task5-star003.png") no-repeat;
 }
 
 .task5-info .middle-line {

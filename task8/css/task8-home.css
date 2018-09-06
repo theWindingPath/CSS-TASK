@@ -1,0 +1,145 @@
+
+/* .task8-banner{
+    width: 100%;
+    height: 600px;
+}
+.task8-banner img{
+    width: 100%;
+} */
+
+/* banner部分、轮播图 */
+
+.task8-banner {
+    overflow: hidden;
+    position: relative;
+    /* background: salmon; */
+    height: auto;
+    max-height: 400px;
+    width: 100%;
+    min-width: 1200px;
+}
+.task8-banner .inner {
+    position: relative; 
+    width: 9999px;
+    /* width: 100%;  */
+    left: 0;
+    top: 0;
+}
+.task8-banner .inner .innerwraper {
+    float: left;
+    /* width: 100%; */
+    /* width: 1920px; */
+}
+.task8-banner .inner .innerwraper img {
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    /* margin: 0 150px; */
+    margin: 0;
+}
+
+.task8-banner .pagination {
+    position: absolute;
+    left: 0px;
+    top: 300px;
+    /* bottom: 10px; */
+    width: 100%;
+    text-align: center;
+}
+.task8-banner .pagination span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #9aa499;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.task8-banner .pagination .active {
+    background-color: #fff;
+}
+
+/* introduce部分 */
+.task8-introduce .introduce-one {
+    margin-top: 160px;
+    /* border: 2px solid darkcyan; */
+}
+.task8-introduce .introduce-one .introduce-pic-001 {
+    background: url("../img/task8-introduce-001.png") no-repeat;
+    width: 42px;
+    height: 62px;
+    margin: 0 auto;
+}
+.task8-introduce .introduce-one .introduce-pic-002 {
+    background: url("../img/task8-introduce-002.png") no-repeat;
+    width: 60px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+.task8-introduce .introduce-one .introduce-pic-003 {
+    background: url("../img/task8-introduce-003.png") no-repeat;
+    width: 52px;
+    height: 56px;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+.task8-introduce .introduce-one .introduce-pic-004 {
+    background: url("../img/task8-introduce-004.png") no-repeat;
+    width: 14px;
+    height: 14px;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+.task8-introduce .introduce-one span{
+    display: block;
+    font-size: 20px;
+    margin: 30px auto;
+    text-align: center;
+}
+.task8-introduce .introduce-one p{
+    font-size: 16px;
+    color: #898989;
+    padding: 0 30px;
+}
+.task8-introduce .introduce-one .ul-one {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.task8-introduce .introduce-one ul li {
+    display: inline-block;
+    margin: 3px 6px;
+}
+.task8-introduce .introduce-one .ul-two {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+
+
+@media (max-width:768px) {
+    .task8-banner {
+        height: auto;
+        min-height: 150px;
+        /* max-height: 200px; */
+        min-width: 300px;
+    }
+    .task8-banner .inner .innerwraper img {
+        height: auto;
+        min-height: 150px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 30px;
+        /* margin: 0; */
+    }
+    
+    .task8-banner .pagination {
+        left: 0px;
+        top: 100px;
+        width: 100%;
+    }
+    .task8-banner .pagination span{
+        width: 6px;
+        height: 6px;
+    }
+}
