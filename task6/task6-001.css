@@ -14,6 +14,7 @@ body{
 .task6-box {
     max-width: 7.2rem;
     margin: 0 auto; 
+    margin-bottom: 1rem; /*给底部设置一个高度，拉上去不会挡住*/
 }
 .container {
     padding: 0 0.3rem;
