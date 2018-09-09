@@ -33,11 +33,11 @@ img {
     height: 0;
 }
 
-.task8-home{
+/* .task8-home{
     background-color: #fafafa;
     width: 100%;
-    /* max-width: 1920px; */
-}
+    /* max-width: 1920px; 
+} */
 /*任务8顶部联系部分*/
 .task8-public-top {
     background: #ffffff;
@@ -184,7 +184,7 @@ img {
         min-width: 200px;
         /* border: 2px solid darkblue; */
     }
-    .task8-public-header .public-container{
+    .public-container{
         width: 100%;
     }
     .navbar-toggle{

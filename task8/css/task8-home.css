@@ -61,7 +61,11 @@
 .task8-banner .pagination .active {
     background-color: #fff;
 } */
-
+.task8-home{
+    background-color: #fafafa;
+    width: 100%;
+    /* max-width: 1920px; */
+}
 /* introduce部分 */
 .task8-introduce .introduce-one {
     margin-top: 60px;
