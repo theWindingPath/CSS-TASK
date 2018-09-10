@@ -1,0 +1,198 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.task7-box{
+    background: #29bde0;
+    width: 6.4rem;
+    /* height: 1rem; */
+    position: relative;
+    left: 50%;
+    margin-left: -3.2rem;
+    /* overflow: hidden; */
+}
+.task7-box .vote-header {
+    background: #29bde0;
+    position: fixed;
+    width: 6.4rem;
+    height: 1rem;
+    top: 0;
+    z-index: 99;
+}
+.task7-box .vote-header+*{margin-top: 1rem;}
+
+.task7-box .vote-header .header-left .btn{
+    background-color: #29bde0;
+    color: #ffffff;
+    font-size: 0.32rem;
+    margin-top: 0.2rem;
+    /* border: 0; */
+}
+.task7-box .vote-header .header-center {
+    text-align: center;
+    font-size: 0.32rem;
+    line-height: 1rem;
+    color: #ffffff;
+}
+.task7-box .vote-header .header-right .btn {
+    background-color: #29bde0;
+    color: #ffffff;
+    font-size: 0.32rem;
+    margin-top: 0.2rem;
+    /* border: 0; */
+}
+/*发言部分*/
+.task7-box .task7-speak {
+    background-color: #b9e0f5;
+    height: 0.8rem;
+}
+.task7-box .task7-speak p{
+    color: #464646;
+    line-height: 0.8rem;
+    margin-left: 0.5rem;
+    font-size: 0.26rem;
+}
+.task7-box .task7-speak #myVideo{
+    display: none;
+}
+.task7-box .task7-speak .play{
+    height: 0.52rem;
+    width: 0.52rem;
+    /* background: url("../img/task7-play.png") no-repeat; */
+    background: url("http://118.126.113.248/jnshu790/CSS-Task/task7/task7-play.png") no-repeat;
+    background-size: 100% auto;
+    cursor: pointer;
+    float: right;
+    margin-top: -0.76rem;
+    margin-right: 0.2rem;
+}
+.task7-box .task7-speak .pause{
+    height: 0.52rem;
+    width: 0.52rem;
+    /* background: url("../img/task7-pause.png") no-repeat; */
+    background: url("http://118.126.113.248/jnshu790/CSS-Task/task7/task7-pause.png") no-repeat;
+    background-size: 100% auto;
+    cursor: pointer;
+    float: right;
+    margin-top: -0.76rem;
+    margin-right: 0.2rem;
+}
+/*投票部分*/
+.task7-box .vote-numbers {
+    width: 6.4rem;
+}
+.task7-box .vote-numbers p {
+    font-size: 0.22rem;
+    color: #ffffff;
+}
+.task7-box .vote-numbers .vote-numbers-out{
+    /* border: 2px solid saddlebrown; */
+    margin: 0.02rem auto;
+    height: 2.1rem; /*给外面一个高度，装下hover内容，在hover隐藏后依然撑开内容*/
+}
+
+.task7-box .vote-numbers .vote-numbers-left {
+    background-color: #f5c97b;
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 4px solid #ffffff;
+    margin: auto 0.1rem;
+}
+
+.task7-box .vote-numbers .vote-numbers-out:hover .task7-hover {
+    display: block;
+}
+
+.task7-box .vote-numbers .task7-hover {
+    /* background: orange; */
+    width: 1.6rem;
+    margin: auto 0.1rem;
+    display: none;
+    /* display：none 在鼠标没有移到图片时隐藏起来 */
+}
+/*给一个active,第一个不隐藏*/
+.task7-box .vote-numbers .active{
+    display: block;
+}
+
+.task7-box .vote-numbers .task7-hover ul li{
+    display: inline-block;
+    margin-top: 0.2rem;
+    /* margin-left: 0.02rem; */
+}
+
+.task7-box .vote-numbers .task7-hover .hover-one {
+    /* background: url("../img/task7-hover-01.png") no-repeat; */
+    background: url("http://118.126.113.248/jnshu790/CSS-Task/task7/task7-hover-01.png") no-repeat;
+    background-size: 100% auto;
+    height: 0.3rem;
+    width: 0.3rem;
+}
+.task7-box .vote-numbers .task7-hover .hover-two {
+    /* background: url("../img/task7-hover-02.png") no-repeat; */
+    background: url("http://118.126.113.248/jnshu790/CSS-Task/task7/task7-hover-02.png") no-repeat;
+    background-size: 100% auto;
+    height: 0.3rem;
+    width: 0.3rem;
+}
+.task7-box .vote-numbers .task7-hover .hover-three {
+    /* background: url("../img/task7-hover-03.png") no-repeat; */
+    background: url("http://118.126.113.248/jnshu790/CSS-Task/task7/task7-hover-03.png") no-repeat;
+    background-size: 100% auto;
+    height: 0.3rem;
+    width: 0.3rem;
+}
+.task7-box .vote-numbers .task7-hover .hover-four {
+    /* background: url("../img/task7-hover-04.png") no-repeat; */
+    background: url("http://118.126.113.248/jnshu790/CSS-Task/task7/task7-hover-04.png") no-repeat;
+    background-size: 100% auto;
+    height: 0.3rem;
+    width: 0.3rem;
+}
+
+.task7-box .vote-numbers .vote-numbers-left .name {
+    color: #565656;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.task7-box .vote-numbers .vote-numbers-left .one{
+    background-color: #83b09a;
+    height: 0.3rem;
+    text-align: center;
+}
+/*footer部分*/
+.task7-box .task7-footer {
+    /* border: 2px solid darkred; */
+    height: 1.9rem;
+    width: 6.4rem;
+    position: fixed;
+    bottom: 0;
+    background-color: #29bde0;
+    text-align: center;
+    line-height: 1.9rem;
+}
+.task7-box .task7-footer .btn{
+    background: #fbb435;
+    width: 5rem;
+    height: 0.9rem;
+}
+.task7-box .task7-footer .btn span {
+    color: #ffffff;
+    font-size: 0.32rem;
+}
+
+/* .footer{
+    background: orangered;
+} */
+
