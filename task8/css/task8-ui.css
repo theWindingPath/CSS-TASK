@@ -1,0 +1,62 @@
+/* 轮播图 */
+.ui-slider-arrow {
+    /* width: 544px; */
+    width: 1200px;
+    height: 40px;
+    position: absolute;
+    /* margin: 0 auto; */
+    margin-top: -20px;
+    top: 50%;
+    /* background-color: orange; */
+}
+
+.ui-slider-arrow .item {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    background: url(../img/ui-slider-arrow.png) no-repeat;
+}
+
+.ui-slider-arrow .left {
+    left: 0;
+}
+
+.ui-slider-arrow .right {
+    right: 0;
+    /* x -40px */
+    background-position: -40px 0;
+}
+
+/* 下拉框 */
+.ui-search{
+    position: relative;
+    /* width: 122px;
+    padding-right: 22px; */
+}
+.ui-search-selected{
+    width: 122px;
+    padding-right: 22px;
+}
+.ui-search-selected-list{
+    background-color: #29b078;
+    display: none;
+}
+.ui-search .icon-xiala{
+    display: inline-block;
+    position: absolute;
+    left: 112px;
+    top: 50%;
+    margin-top: -11px;
+    width: 22px;
+    height: 22px;
+    background: url(../img/icon-xiala.png) no-repeat;
+    background-size: 100% auto;
+    line-height: 22px;
+    /* cursor: pointer; */
+}
+
+@media (max-width:768px) {
+
+}

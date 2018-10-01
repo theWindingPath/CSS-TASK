@@ -113,7 +113,8 @@ img {
     margin-right: 0;
 }
 .navbar-nav li{
-    width: 100px;
+    /* width: 100px; */
+    width: 126px;
     height: 96px;
     text-align: center;
     font-size: 22px;

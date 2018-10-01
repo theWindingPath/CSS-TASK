@@ -88,6 +88,7 @@ body{
 /*投票部分*/
 .task7-box .vote-numbers {
     width: 6.4rem;
+    margin-bottom: 1.6rem;
 }
 .task7-box .vote-numbers p {
     font-size: 0.22rem;

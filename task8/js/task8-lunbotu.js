@@ -3,7 +3,8 @@ var innerGroup = $(".innerwraper");
 var leftArrow = $(".left-arrow");
 var rightArrow = $(".right-arrow");
 var spanGroup = $(".pagination span");
-var imgWidth = $(".innerwraper img:first-child").eq(0).width();
+// var imgWidth = $(".innerwraper img:first-child").eq(0).width();
+var imgWidth = $(".task8-banner").eq(0).width();
 var _index = 0;
 var timer = null;
 spanGroup.on("click",function() {
@@ -12,7 +13,7 @@ spanGroup.on("click",function() {
 })
 
 function autoGo() {
-    timer = setIntervalL(go,3000);
+    timer = setInterval(go,3000);
 }
 
 autoGo();

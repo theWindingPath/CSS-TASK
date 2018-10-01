@@ -140,6 +140,7 @@ body {
 .task7-box .result-days{
     /* background: darkgray; */
     padding: 0 0.8rem;
+    margin-bottom: 1.6rem;
 }
 .task7-box .result-days .day-one{
     border-bottom: 1px solid #cdcdcd;
