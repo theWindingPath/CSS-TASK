@@ -71,6 +71,7 @@ $.fn.LBT_hanShu = function () {
     });
 }
 
+// 下拉菜单
 $.fn.xialakuang_hanShu = function() {
     var ui = $(this);
     // 点击展开下拉框
@@ -96,8 +97,31 @@ $.fn.xialakuang_hanShu = function() {
     // });
 }
 
+// 导航切换条 tab
+$.fn.qie_huan_tiao_hanshu =function(qiehuan_tiao, qiehuan_bufen) {
+
+    var ui = $(this);
+    var qiehuan_tiao_bl = $(qiehuan_tiao, ui); //切换条 点击部分
+    var qiehuan_bufen_bl = $(qiehuan_bufen, ui); // 被切换部分
+    // console.log(qiehuan_tiao_bl);
+
+    qiehuan_tiao_bl.on('click', function(){
+        // console.log($(this).index());
+        var dangqian_xiaobiao = $(this).index();  // ul li 会影响点击 获取 a 下标 不要放到ul li 里面
+        // debugger
+        // var index = $(this).index();
+        // console.log(dangqian_xiaobiao);
+        
+        qiehuan_tiao_bl.removeClass('active').eq(dangqian_xiaobiao).addClass('active'); //移除 active累 再添加
+        qiehuan_bufen_bl.hide().eq(dangqian_xiaobiao).show(); 
+        return false;
+    })
+
+}
+
 //主函数 从这里开始执行
 $(function () {
     $('.ui-slider-LunBT').LBT_hanShu(); // 调用轮播图 函数
     $('.ui-search').xialakuang_hanShu(); // 下拉框函数
+    $('.ui-tab').qie_huan_tiao_hanshu('.direction .item', '.ui-tab-qiehuan .item'); // 导航切换条 tab
 });
