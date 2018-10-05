@@ -26,6 +26,12 @@
     <div class="task8-home">
         <section class="task8-public-top">
             <div class="public-container hidden-xs">
+
+                <!-- 登录 js弹出层 -->
+                <div class="ui-tanchuceng">
+                    <a href="#1" id="denglu-lianjie">登录</a>
+                </div>
+
                 <ul class="clearfloat">
                     <li><a href="#"><img src="img/task8-top-weixin.png"></a></li>
                     <li><a href="#"><img src="img/task8-top-qq.png"></a></li>
@@ -33,6 +39,7 @@
                 </ul>
                 <p>客服热线：010-594-78634</p>
             </div>
+
             <div class="top-xiangying hidden-md hidden-lg hidden-sm">
                 <span>登录</span>
                 <span class="line"></span>
@@ -441,6 +448,59 @@
             </div>
             <p class="rights">Copyright &copy; 2015技能树 www.jnshu.com ALL Rights Reserved | 京ICP备135005880号</p>
         </section>
+
+        <!-- 弹出层遮罩 -->
+        <div id="zhezhao-tanchuceng" class="ui-zhezhao-tanchuceng"></div>
+        <!-- 弹出层窗体 -->
+        <div id="chuangti-tanchuceng" class="ui-chuangti-tanchuceng">
+            <!-- 弹出层关闭按钮 -->
+            <div id="tanchuceng-guanbi" class="ui-tanchuceng-guanbi">×</div>
+            <!-- 弹出层内容区域 js添加 -->
+            <div id="tanchuceng-neirong" class="ui-tanchuceng-neirong">
+
+                <!-- 登录窗体
+                <div id="denglu-chuangti">
+                    <div class="ui-denglu">
+                        <h4 class="ui-biaoti">登录</h4>
+                        <div class="ui-xiangmu">
+                            <label>账号</label>
+                            <input id="yonghuming" class="shurukuang" name="username" type="text" />
+                            <p class="ui-cuowu-xinxi"></p>
+                        </div>
+                        <div class="ui-xiangmu">
+                            <label>密码</label>
+                            <input id="mima" class="shurukuang" name="password" type="password" />
+                        </div>
+                        <div class="ui-xiangmu">
+                            <label>&nbsp;</label>
+                            <input id="denglu-tijiao-anniu" class="ui-tijiao" type="submit" value="已填写好" />
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+        <!-- 登录窗体 -->
+        <div id="denglu-chuangti" style="display: none;">
+            <div class="ui-denglu">
+                <h4 class="ui-biaoti">登录</h4>
+                <div class="ui-xiangmu">
+                    <label>账号</label>
+                    <input id="yonghuming" class="shurukuang" name="username" type="text" />
+                    <p class="ui-cuowu-xinxi"></p>
+                </div>
+                <div class="ui-xiangmu">
+                    <label>密码</label>
+                    <input id="mima" class="shurukuang" name="password" type="password" />
+                </div>
+                <div class="ui-xiangmu">
+                    <label>&nbsp;</label>
+                    <input id="denglu-tijiao-anniu" class="ui-tijiao" type="submit" value="已填写好" />
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
@@ -451,6 +511,7 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <!-- <script type="text/javascript" src="js/task8-lunbotu.js"></script> -->
     <script type="text/javascript" src="js/task8-ui.js"></script>
+    <script type="text/javascript" src="js/denglu.js"></script>
 </body>
 
 </html>
